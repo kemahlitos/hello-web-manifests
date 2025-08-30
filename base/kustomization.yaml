@@ -12,4 +12,4 @@ resources:
 # Jenkins, burada sadece newTag'i değiştirecek (immutable tag akışı)
 images:
   - name: docker.io/kemahlitos/hello-web
-    newTag: "5.1"
+    newTag: 6.1
