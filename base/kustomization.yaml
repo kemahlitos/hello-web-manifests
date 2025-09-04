@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Tüm kaynaklar bu namespace'e gider
+namespace: demo
+
+resources:
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+
+# Jenkins, burada sadece newTag'i değiştirecek (immutable tag akışı)
+images:
+  - name: docker.io/kemahlitos/hello-web
+    newTag: latest
