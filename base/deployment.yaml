@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: hello-web
-        # TAG'i kustomize set image ile override edeceğiz, burada tag vermiyoruz
+        # No tag needed here
         image: docker.io/kemahlitos/hello-web
         ports:
         - containerPort: 80
